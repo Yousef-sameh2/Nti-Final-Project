@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <header class="bg-white mb-5 ">
+        <nav
+            class="container-fluid position-relative d-flex bg-white align-items-center justify-content-between  py-3 nav-bar">
+
+            <div class="d-flex gap-4">
+                <a class="text-decoration-none oil-color fw-semibold small pb-2 border-bottom border-3 border-mint"
+                    href="#">
+                    <i class="fa-solid fa-plane"></i> Find Flight
+                </a>
+                <a class="text-decoration-none oil-color fw-semibold small pb-2" href="#">
+                    <i class="fa-solid fa-bed"></i> Find Stays
+                </a>
+            </div>
+
+            <a href="#" class="position-absolute top-50 start-50 translate-middle">
+                <img src="../images/Group.png" alt="Golobe" height="36">
+            </a>
+
+            <div class="d-flex align-items-center gap-3 oil-color small">
+                <span class="border-end pe-3"><i class="fa-solid fa-heart"></i> Favourites</span>
+                <span class="d-flex align-items-center gap-2">
+                    <img class="rounded-circle object-fit-cover"
+                        src="../images/de42315813dc5b2e20dc60002c5ebc10bec549e3.jpg" alt="" width="40" height="40">
+                    John D.
+                </span>
+            </div>
+        </nav>
+
+        <div class=" header-title  ">
+            <h1 class="fs-4xl">Make your travel whishlist, we’ll do the rest</h1>
+            <p class="fs-xl">Special offers to suit your plan</p>
+        </div>
+
+
+
+        <div class="search-card shadow-lg">
+            <div class="search-title w-100">
+                <p class="fw-bold fs-5">Where are you flying?</p>
+            </div>
+
+            <div class="search-inputs-wrapper  d-flex w-100   align-items-center chose-place ">
+                <div class="input-group d-flex flex-column  ">
+                    <label class="position-absolute" for="destination">Enter Destination</label>
+                    <input type="text" id="destination" placeholder="Istanbul, Turkey">
+                </div>
+
+                <div class="input-group d-flex flex-column ">
+                    <label for="checkin">Check in</label>
+                    <input type="date" id="checkin">
+                </div>
+
+                <div class="input-group d-flex flex-column ">
+                    <label for="checkout">Check out</label>
+                    <input type="date" id="checkout">
+                </div>
+
+                <div class="input-group d-flex flex-column  ">
+                    <label for="guests">Rooms & Guests</label>
+                    <input type="text" id="guests" placeholder="1 room, 2 guests">
+                </div>
+            </div>
+            <div class="d-flex justify-content-end gap-5 prompo-code">
+                <a href="#">+ Add Promo Code</a>
+                <a class="show-place" href="#"><i class="fa-solid fa-building"></i> Show Places</a>
+            </div>
+
+        </div>
+    </header>
+
+
+
+    <div class="recent-search container">
+        <div class=" container pb-4 d-flex ps-4">
+            <h3>Your recent searches</h3>
+        </div>
+        <div class=" d-flex ">
+            <div class="card border-0  d-flex min-card">
+                <img class="" src="../images/trkua.jpg" alt="">
+                <div>
+                    <h5>Istanbul, Turkey</h5>
+                    <p>325 places</p>
+                </div>
+            </div>
+
+            <div class="card border-0 d-flex min-card">
+                <img class="" src="../images/austoralya.jpg" alt="">
+                <div>
+                    <h5>Sydney, Australia</h5>
+                    <p>325 places</p>
+                </div>
+            </div>
+
+            <div class="card border-0 d-flex  min-card">
+                <img class="" src="../images/azbergan.jpg" alt="">
+                <div>
+                    <h5>Baku, Azerbaijan</h5>
+                    <p>325 places</p>
+                </div>
+            </div>
+
+            <div class="card border-0 d-flex  min-card">
+                <img class="" src="../images/maldef.jpg" alt="">
+                <div>
+                    <h5>Malé, Maldives</h5>
+                    <p>325 places</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <section class="travel container">
+        <div class="d-flex align-items-center justify-content-around">
+            <div class="w-75 title-travel">
+                <h3>Fall into travel</h3>
+                <p>Going somewhere to celebrate this season? Whether you’re going home or
+                    somewhere to roam, we’ve got the travel tools to get you to your destination.</p>
+            </div>
+            <a class="link-title-travel" href="#">See All</a>
+
+        </div>
+        <div class="container mb-3 mt-4 d-flex gap-3 ">
+
+            <div class="card book-card w-25 rounded-4  ">
+                <img class="rounded-4" src="../images/melbourny.jpg" alt="">
+                <div class="title-card w-100 ">
+                    <div class="d-flex justify-content-around align-items-center ">
+                        <div>
+                            <h4 class="p-0 m-0 fs-5">Melbourne</h4>
+                            <p class="opacity-50">An amazing journey</p>
+                        </div>
+                        <div>
+                            <p class="fw-bold fs-5">$ 700</p>
+                        </div>
+                    </div>
+                    <div class="btn-card w-100">
+                        <button type="button" class="btn  ">Book a Hotel</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card book-card w-25 rounded-4">
+                <img class="rounded-4" src="../images/paris.jpg" alt="">
+                <div class="title-card w-100 ">
+                    <div class="d-flex justify-content-around align-items-center ">
+                        <div>
+                            <h4 class="p-0 m-0 fs-5">Melbourne</h4>
+                            <p class="opacity-50">An amazing journey</p>
+                        </div>
+                        <div>
+                            <p class="fw-bold fs-5">$ 700</p>
+                        </div>
+                    </div>
+                    <div class="btn-card w-100">
+                        <button type="button" class="btn  ">Book a Hotel</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card book-card w-25 rounded-4">
+                <img class="rounded-4" src="../images/london.jpg" alt="">
+                <div class="title-card w-100 ">
+                    <div class="d-flex justify-content-around align-items-center ">
+                        <div>
+                            <h4 class="p-0 m-0 fs-5">Melbourne</h4>
+                            <p class="opacity-50">An amazing journey</p>
+                        </div>
+                        <div>
+                            <p class="fw-bold fs-5">$ 700</p>
+                        </div>
+                    </div>
+                    <div class="btn-card w-100">
+                        <button type="button" class="btn  ">Book a Hotel</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card book-card w-25 rounded-4">
+                <img class="rounded-4" src="../images/colombya.jpg" alt="">
+                <div class="title-card w-100 ">
+                    <div class="d-flex justify-content-around align-items-center ">
+                        <div>
+                            <h4 class="p-0 m-0 fs-5">Melbourne</h4>
+                            <p class="opacity-50">An amazing journey</p>
+                        </div>
+                        <div>
+                            <p class="fw-bold fs-5">$ 700</p>
+                        </div>
+                    </div>
+                    <div class="btn-card w-100">
+                        <button type="button" class="btn  ">Book a Hotel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="fall-into-travel mt-5 container mb-5">
+        <div class="d-flex align-items-center justify-content-around ">
+            <div class="w-75 title-travel">
+                <h3>Fall into travel</h3>
+                <p>Going somewhere to celebrate this season? Whether you’re going home or
+                    somewhere to roam, we’ve got the travel tools to get you to your destination.</p>
+            </div>
+            <a class="link-title-travel" href="#">See All</a>
+        </div>
+
+        <div class="row mt-5  gap-2 h-100 ">
+            <div class="col-6 w-50 Backpacking  rounded-3  ">
+                <div class="d-flex justify-content-around align-items-center gap-5 pt-3">
+                    <h3 class="title-Backpacking">Backpacking Sri Lanka</h3>
+                    <a class="link-from" href="">From <span class="d-block fw-bold">$700</span></a>
+                </div>
+                <div class="text-Backpacking">
+                    <p>Traveling is a unique experience as it's t
+                        he best way to unplug from the pushes and pulls of daily
+                        life. It helps us to forget about our problems, frustrations,
+                        and fears at home. During our journey, we experience life in different ways.
+                        We explore new places,
+                        cultures, cuisines, traditions, and ways of living.</p>
+                </div>
+                <div class=" cnt-btn-Backpacking">
+                    <button type="button" class="btn btn-light btn-Backpacking">Book Flight</button>
+                </div>
+            </div>
+            <div class="row col-6">
+
+                <div class="row col-6 gy-4 ">
+
+                    <img class="cards-img" src="../images/first.jpg" alt="">
+
+                    <div class="col-12">
+                        <img class="cards-img" src="../images/third.jpg" alt="">
+                    </div>
+
+                </div>
+
+                <div class="row col-6 gy-4 ">
+
+                    <img class="cards-img" src="../images/second.jpg" alt="">
+
+                    <div class=" col-12 ">
+                        <img class="cards-img" src="../images/fourth.jpg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="d-flex container py-5">
+
+            <div>
+                <div>
+                    <img src="../images/Group.png" alt="">
+                </div>
+                <div class="d-flex gap-3 pt-3">
+                    <a href="#"><i class="fa-brands fa-facebook icon-cloor"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter icon-cloor"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube icon-cloor"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram icon-cloor"></i></a>
+                </div>
+            </div>
+
+            <div class="container row d-flex justify-content-center">
+
+                <div class="col-2">
+                    <h5>Our Destinations</h5>
+                    <div class=" d-flex flex-column ">
+                        <a href="" class="oil-color text-decoration-none opacity-50">Canada</a>
+                        <a href="" class="oil-color text-decoration-none opacity-50">Alaksa</a>
+                        <a href="" class="oil-color text-decoration-none opacity-50">France</a>
+                        <a href="" class="oil-color text-decoration-none opacity-50">Iceland</a>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <h5 class="cursor">Our Activities</h5>
+                    <div class=" d-flex flex-column">
+                        <a href="" class="oil-color text-decoration-none opacity-50">Northern Lights</a>
+                        <a href="" class="oil-color text-decoration-none opacity-50">Cruising & sailing</a>
+                        <a href="" class="oil-color text-decoration-none opacity-50">Multi-activities</a>
+                        <a href="" class="oil-color text-decoration-none opacity-50">Kayaing</a>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <h5>Travel Blogs</h5>
+                    <div class=" d-flex flex-column">
+                        <a href="" class="oil-color text-decoration-none opacity-50">Bali Travel Guide</a>
+                        <a href="" class="oil-color text-decoration-none opacity-50">Sri Lanks Travel Guide</a>
+                        <a href="" class="oil-color text-decoration-none opacity-50">Peru Travel Guide</a>
+                        <a href="" class="oil-color text-decoration-none opacity-50">Bali Travel Guide</a>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <h5>About Us</h5>
+                    <div class=" d-flex flex-column">
+                        <a href="" class="oil-color text-decoration-none opacity-50">Our Story</a>
+                        <a href="" class="oil-color text-decoration-none opacity-50">Work with us</a>
+                    </div>
+                </div>
+
+                <div class="col-2 ">
+                    <h5>Contact Us</h5>
+                    <div class=" d-flex flex-column">
+                        <a href="" class="oil-color text-decoration-none opacity-50">Our Story</a>
+                        <a href="" class="oil-color text-decoration-none opacity-50">Work with us</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container" >
+
+            <div class="row footer-Subscribe d-flex align-items-center ">
+                <div class="col-6 w-50  title-footer">
+                    <h3 class="w-25" >Subscribe Newsletter</h3>
+                    <h4>The Travel</h4>
+                    <p>Get inspired! Receive travel discounts, tips and behind the scenes stories.</p>
+                    <div class="w-100 d-flex  gap-3" >
+                        <input  class="w-100 p-2 custom-input" type="email" placeholder="Your Email Address">
+                        <button class="btn  btn-dark p-3" >Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-6  w-50 d-flex justify-content-end">
+                    <img class="w-75" src="../images/post.png" alt="">
+                </div>
+            </div>
+
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
