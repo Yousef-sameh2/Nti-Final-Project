@@ -9,6 +9,10 @@
     --ment-orange: #ff8682;
 }
 
+.oil-green {
+    border-bottom: 3px solid var(--Mint-Green);
+}
+
 body {
     background-color: var(--white);
     overflow-x: hidden;
@@ -16,6 +20,10 @@ body {
 
 .oil-color {
     color: var(--oil-Green);
+}
+
+.mint-green{
+    background-color: var(--Mint-Green);
 }
 
 .cursor {
@@ -354,35 +362,457 @@ footer {
     text-decoration: underline;
 }
 
-.opacty-descrip p{
-    opacity:0.3;
+.opacty-descrip p {
+    opacity: 0.3;
     font-size: 13px;
 }
 
-.show-counter a{
-
+.show-counter a {
     text-decoration: none;
     color: var(--oil-Green);
     font-weight: bold;
 }
 
-.show-counter a span{
+.show-counter a span {
     color: var(--ment-orange);
 }
 
 .show-counter a span:hover,
-.show-option p a:hover{
+.show-option p a:hover {
     color: var(--Mint-Green);
 }
 
-.show-option p{
+.show-option p {
     font-weight: 200;
 }
 
-.show-option p a{
+.show-option p a {
     color: var(--oil-Green);
     text-decoration: none;
     font-weight: bold;
-
 }
 
+.ds-card .star {
+    font-size: 13px;
+}
+
+.ds-card .price-card {
+    color: var(--ment-orange);
+}
+
+.ds-card .price-card span {
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.ds-card a {
+    text-decoration: none;
+    color: var(--oil-Green);
+}
+
+.location-card a {
+    text-decoration: none;
+    color: var(--oil-Green);
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.location-card a i {
+    color: var(--Mint-Green);
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.location-card a:hover {
+    color: var(--ment-orange);
+    transform: translateY(-3px);
+}
+
+.location-card a:hover i {
+    color: var(--ment-orange);
+    animation: icon 0.5s ease;
+}
+
+@keyframes icon {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    40% {
+        transform: translateY(-6px) scale(1.12);
+    }
+
+    70% {
+        transform: translateY(1px) scale(0.94);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+.rate-card .rate {
+    color: var(--ment-orange);
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.rate-card .rate span {
+    color: var(--oil-Green);
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.rate-card i {
+    font-size: 12px;
+}
+
+.rate-card .Aminities {
+    font-size: 14px;
+}
+
+.rate-card .Aminities span {
+    font-weight: bold;
+}
+
+.total-rate {
+    padding-bottom: 5%;
+}
+
+.total-rate span {
+    border: 1px solid var(--Mint-Green);
+    color: var(--oil-Green);
+    font-size: 18px;
+    padding: 1% 2%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.total-rate span:hover {
+    background-color: var(--Mint-Green);
+}
+
+.total-rate p {
+    font-size: 14px;
+}
+
+.btn-card i {
+    border: 1px solid var(--Mint-Green);
+    padding: 2.5% 3%;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn-card a {
+    width: 85%;
+    text-decoration: none;
+    color: var(--oil-Green);
+    border: 1px solid var(--Mint-Green);
+    padding: 2%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--Mint-Green);
+    transition:
+        transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+        background-color 0.35s ease;
+}
+
+.btn-card a:hover {
+    background-color: #68b59b;
+    transform: scale(1.03);
+}
+
+.show-images {
+    position: absolute;
+    top: 5%;
+    left: 22.4%;
+    width: 30%;
+}
+
+.show-images a {
+    text-decoration: none;
+    color: var(--oil-Green);
+    border: 1px solid var(--white);
+    background-color: var(--white);
+    opacity: 0.5;
+    padding: 2% 2.4%;
+    border-radius: 8px;
+}
+
+.Show-more-results {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.Show-more-results a {
+    width: 90%;
+    text-decoration: none;
+    border: 1px solid var(--oil-Green);
+    color: var(--white);
+    background-color: var(--oil-Green);
+    padding: 1% 0px;
+    border-radius: 8px;
+    transition:
+        transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+        background-color 0.35s ease;
+}
+
+.Show-more-results a:hover {
+    background-color: #192919;
+    transform: scale(1.03);
+}
+
+@media (max-width: 991px) {
+    .header-title {
+        width: 50%;
+    }
+
+    .chose-place {
+        flex-wrap: wrap;
+        gap: 24px 4%;
+    }
+
+    .chose-place .input-group {
+        width: 48%;
+        padding: 8px;
+    }
+
+    .search-icon {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .min-card img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .min-card h5 {
+        font-size: 14px;
+    }
+
+    .travel>.container {
+        flex-wrap: wrap;
+    }
+
+    .book-card {
+        width: calc(50% - 8px) !important;
+    }
+
+    .book-card img {
+        object-fit: cover;
+    }
+
+    .title-Backpacking {
+        font-size: 30px;
+        width: 50%;
+    }
+
+    aside.col-4,
+    section.col-8 {
+        width: 100%;
+    }
+
+    section.col-8 {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-bar {
+        flex-wrap: wrap;
+        justify-content: center !important;
+        gap: 12px;
+        padding: 0px 4%;
+    }
+
+    .nav-bar>a {
+        position: static !important;
+        transform: none !important;
+        order: -1;
+        width: 100%;
+        text-align: center;
+    }
+
+    header {
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .header-title {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        padding: 40px 6% 30px 6%;
+    }
+
+    .search-card {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        width: 88%;
+        margin: 0px auto;
+        padding: 20px;
+    }
+
+    .prompo-code {
+        flex-wrap: wrap;
+        justify-content: space-between !important;
+        gap: 15px !important;
+        padding-top: 20px;
+    }
+
+    .show-place {
+        padding: 8px 14px;
+    }
+
+    .recent-search>.d-flex:last-child {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .min-card {
+        width: 50%;
+    }
+
+    .link-title-travel {
+        padding: 6px 14px;
+    }
+
+    .title-travel h3 {
+        font-size: 26px;
+    }
+
+    .Backpacking {
+        width: 100% !important;
+    }
+
+    .fall-into-travel>.row {
+        gap: 20px !important;
+    }
+
+    .fall-into-travel>.row>.row.col-6 {
+        width: 100%;
+    }
+
+    .title-Backpacking {
+        font-size: 26px;
+        width: 60%;
+    }
+
+    .link-from {
+        padding: 8px 14px;
+    }
+
+    .search-container {
+        padding: 30px 20px;
+    }
+
+    .show-images {
+        top: 15px;
+        left: 15px;
+        width: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .chose-place {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .chose-place .input-group {
+        width: 100%;
+    }
+
+    .min-card {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    .title-travel h3 {
+        font-size: 24px;
+    }
+
+    .book-card {
+        width: 100% !important;
+        height: 380px;
+    }
+
+    .cards-img {
+        height: 150px;
+    }
+
+    .card-title {
+        font-size: 20px !important;
+    }
+
+    .ds-card {
+        flex-shrink: 0;
+        padding-left: 12px;
+    }
+
+    .ds-card .price-card span {
+        font-size: 22px;
+    }
+
+    .rate-card {
+        flex-wrap: wrap;
+    }
+
+    .rate-card i {
+        padding-left: 12px !important;
+    }
+
+    .total-rate span {
+        padding: 4px 9px;
+    }
+
+    .btn-card i {
+        padding: 9px 11px;
+    }
+
+    .btn-card a {
+        width: auto;
+        flex: 1;
+        padding: 9px;
+    }
+
+    section.col-8>.row>.d-flex {
+        padding-left: 12px !important;
+        gap: 8px !important;
+    }
+
+    section.col-8>.d-flex {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .Show-more-results a {
+        padding: 10px 0px;
+    }
+}
+
+/* for js */
+
+.promo-toast {
+    display: flex;
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #198754;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    z-index: 9999;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}

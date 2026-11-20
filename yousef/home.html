@@ -18,16 +18,16 @@
 
 <body>
 
-    <header class="bg-white mb-5 ">
+    <header class="bg-white mb-5">
         <nav
             class="container-fluid position-relative d-flex bg-white align-items-center justify-content-between  py-3 nav-bar">
 
             <div class="d-flex gap-4">
-                <a class="text-decoration-none oil-color fw-semibold small pb-2 border-bottom border-3 border-mint"
+                <a class="text-decoration-none oil-color fw-semibold small pb-2 oil-green " id="FlightTitle"
                     href="#">
                     <i class="fa-solid fa-plane"></i> Find Flight
                 </a>
-                <a class="text-decoration-none oil-color fw-semibold small pb-2" href="#">
+                <a class="text-decoration-none oil-color fw-semibold small pb-2"  id="FindStays" href="#">
                     <i class="fa-solid fa-bed"></i> Find Stays
                 </a>
             </div>
@@ -79,8 +79,11 @@
                     <input type="text" id="guests" placeholder="1 room, 2 guests">
                 </div>
             </div>
-            <div class="d-flex justify-content-end gap-5 prompo-code">
-                <a href="#">+ Add Promo Code</a>
+            <div class="d-flex justify-content-end gap-5 prompo-code">  
+
+                <a href="#" id="Prompobtn" >+ Add Promo Code</a>
+                <div id="promoMsg"  class="promo-toast d-none"></div>
+
                 <a class="show-place" href="#"><i class="fa-solid fa-building"></i> Show Places</a>
             </div>
 
@@ -372,20 +375,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+        <script src="../js/hotellist.js" ></script>
 
 </body>
 

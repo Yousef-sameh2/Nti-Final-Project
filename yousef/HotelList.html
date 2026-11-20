@@ -22,11 +22,11 @@
             class="container-fluid position-relative d-flex bg-white align-items-center justify-content-between  py-3 nav-bar">
 
             <div class="d-flex gap-4">
-                <a class="text-decoration-none oil-color fw-semibold small pb-2 border-bottom border-3 border-mint"
+                <a class="text-decoration-none oil-color fw-semibold small pb-2 " id="FlightTitle"
                     href="#">
                     <i class="fa-solid fa-plane"></i> Find Flight
                 </a>
-                <a class="text-decoration-none oil-color fw-semibold small pb-2" href="#">
+                <a class="text-decoration-none oil-color fw-semibold small pb-2" id="FindStays" href="#">
                     <i class="fa-solid fa-bed"></i> Find Stays
                 </a>
             </div>
@@ -100,11 +100,11 @@
                             <i class="fa-solid fa-angle-down"></i>
                         </div>
                         <div class="d-flex reat-count gap-3">
-                            <p>0+</p>
-                            <p>1+</p>
-                            <p>2+</p>
-                            <p>3+</p>
-                            <p>4+</p>
+                            <p class="rate" >0+</p>
+                            <p  class="rate">1+</p>
+                            <p class="rate">2+</p>
+                            <p class="rate">3+</p>
+                            <p class="rate">4+</p>
                         </div>
                     </div>
 
@@ -199,35 +199,292 @@
                     </div>
                 </div>
 
+
+
                 <div>
 
+                    <div class="card mb-3 mt-4 border-0">
 
-                    <div class="card mb-3">
-                        <div class="row g-0">
+                        <div class="row g-0 position-relative mb-4">
                             <div class="col-md-4">
-                                <img src="..." class="img-fluid rounded-start" alt="...">
+                                <img src="../images/bluehotel.jpg" class="img-fluid rounded-start h-100" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
-                                            ago</small></p>
+                                    <div class="d-flex justify-content-between ">
+                                        <h5 class="card-title fs-3">CVK Park Bosphorus Hotel Istanbul</h5>
+                                        <div class="ds-card">
+                                            <p class="p-0 m-0 star">starting from</p>
+                                            <p class="p-0 m-0 price-card"><span>$240</span>/night</p>
+                                            <a href="#" class="p-0 m-0 ">excl. tax</a>
+                                        </div>
+                                    </div>
+                                    <div class="location-card ">
+                                        <a href="https://maps.app.goo.gl/uWtiJJkqzzDvLgzw6" target="_blank"><i
+                                                class="fa-solid fa-location-dot pe-2"></i>Gümüssuyu Mah. Inönü Cad.
+                                            No:8, Istanbul 34437</a>
+                                    </div>
+                                    <div class="rate-card d-flex align-items-center mt-2">
+                                        <p class="rate p-0 m-0">★★★★★ <span>5 Star Hotel</span></p>
+                                        <i class="fa-solid fa-mug-saucer ps-5 pe-1 mt-1"></i>
+                                        <p class="Aminities p-0 m-0"><span>20+</span> Aminities</p>
+                                    </div>
+                                    <div class="total-rate d-flex align-items-center gap-3 border-bottom">
+                                        <span>4.2</span>
+                                        <p class="p-0 m-0 "><strong>Very Good</strong> 371 reviews </p>
+                                    </div>
+
+                                    <div class="btn-card d-flex align-items-center gap-3 pt-4">
+                                        <i class="fa-regular fa-heart FavoritePlace"></i>
+                                        <a href="#">View Price</a>
+                                    </div>
+
+                                    <div class="show-images">
+                                        <a href="booking.html">9 images</a>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
 
 
+                    <div class="card mb-3 mt-4 border-0">
+
+                        <div class="row g-0 position-relative  mb-4">
+                            <div class="col-md-4">
+                                <img src="../images/secondhotel.jpg" class="img-fluid rounded-start h-100" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between ">
+                                        <h5 class="card-title fs-3">CVK Park Bosphorus Hotel Istanbul</h5>
+                                        <div class="ds-card">
+                                            <p class="p-0 m-0 star">starting from</p>
+                                            <p class="p-0 m-0 price-card"><span>$240</span>/night</p>
+                                            <a href="#" class="p-0 m-0 ">excl. tax</a>
+                                        </div>
+                                    </div>
+                                    <div class="location-card ">
+                                        <a href="https://maps.app.goo.gl/uWtiJJkqzzDvLgzw6" target="_blank"><i
+                                                class="fa-solid fa-location-dot pe-2"></i>Gümüssuyu Mah. Inönü Cad.
+                                            No:8, Istanbul 34437</a>
+                                    </div>
+                                    <div class="rate-card d-flex align-items-center mt-2">
+                                        <p class="rate p-0 m-0">★★★★★ <span>5 Star Hotel</span></p>
+                                        <i class="fa-solid fa-mug-saucer ps-5 pe-1 mt-1"></i>
+                                        <p class="Aminities p-0 m-0"><span>20+</span> Aminities</p>
+                                    </div>
+                                    <div class="total-rate d-flex align-items-center gap-3 border-bottom">
+                                        <span>4.2</span>
+                                        <p class="p-0 m-0 "><strong>Very Good</strong> 371 reviews </p>
+                                    </div>
+
+                                    <div class="btn-card d-flex align-items-center gap-3 pt-4">
+                                        <i class="fa-regular fa-heart FavoritePlace"></i>
+                                        <a href="#">View Price</a>
+                                    </div>
+
+                                    <div class="show-images">
+                                        <a href="booking.html">9 images</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 mt-4 border-0">
+
+                        <div class="row g-0 position-relative  mb-4">
+                            <div class="col-md-4">
+                                <img src="../images/thirdhotel.jpg" class="img-fluid rounded-start h-100" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between ">
+                                        <h5 class="card-title fs-3">CVK Park Bosphorus Hotel Istanbul</h5>
+                                        <div class="ds-card">
+                                            <p class="p-0 m-0 star">starting from</p>
+                                            <p class="p-0 m-0 price-card"><span>$240</span>/night</p>
+                                            <a href="#" class="p-0 m-0 ">excl. tax</a>
+                                        </div>
+                                    </div>
+                                    <div class="location-card ">
+                                        <a href="https://maps.app.goo.gl/uWtiJJkqzzDvLgzw6" target="_blank"><i
+                                                class="fa-solid fa-location-dot pe-2"></i>Gümüssuyu Mah. Inönü Cad.
+                                            No:8, Istanbul 34437</a>
+                                    </div>
+                                    <div class="rate-card d-flex align-items-center mt-2">
+                                        <p class="rate p-0 m-0">★★★★★ <span>5 Star Hotel</span></p>
+                                        <i class="fa-solid fa-mug-saucer ps-5 pe-1 mt-1"></i>
+                                        <p class="Aminities p-0 m-0"><span>20+</span> Aminities</p>
+                                    </div>
+                                    <div class="total-rate d-flex align-items-center gap-3 border-bottom">
+                                        <span>4.2</span>
+                                        <p class="p-0 m-0 "><strong>Very Good</strong> 371 reviews </p>
+                                    </div>
+
+                                    <div class="btn-card d-flex align-items-center gap-3 pt-4">
+                                        <i class="fa-regular fa-heart FavoritePlace"></i>
+                                        <a href="#">View Price</a>
+                                    </div>
+
+                                    <div class="show-images">
+                                        <a href="booking.html">9 images</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 mt-4 border-0">
+
+                        <div class="row g-0 position-relative  mb-4">
+                            <div class="col-md-4">
+                                <img src="../images/furthhotel.jpg" class="img-fluid rounded-start h-100" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between ">
+                                        <h5 class="card-title fs-3">CVK Park Bosphorus Hotel Istanbul</h5>
+                                        <div class="ds-card">
+                                            <p class="p-0 m-0 star">starting from</p>
+                                            <p class="p-0 m-0 price-card"><span>$240</span>/night</p>
+                                            <a href="#" class="p-0 m-0 ">excl. tax</a>
+                                        </div>
+                                    </div>
+                                    <div class="location-card ">
+                                        <a href="https://maps.app.goo.gl/uWtiJJkqzzDvLgzw6" target="_blank"><i
+                                                class="fa-solid fa-location-dot pe-2"></i>Gümüssuyu Mah. Inönü Cad.
+                                            No:8, Istanbul 34437</a>
+                                    </div>
+                                    <div class="rate-card d-flex align-items-center mt-2">
+                                        <p class="rate p-0 m-0">★★★★★ <span>5 Star Hotel</span></p>
+                                        <i class="fa-solid fa-mug-saucer ps-5 pe-1 mt-1"></i>
+                                        <p class="Aminities p-0 m-0"><span>20+</span> Aminities</p>
+                                    </div>
+                                    <div class="total-rate d-flex align-items-center gap-3 border-bottom">
+                                        <span>4.2</span>
+                                        <p class="p-0 m-0 "><strong>Very Good</strong> 371 reviews </p>
+                                    </div>
+
+                                    <div class="btn-card d-flex align-items-center gap-3 pt-4">
+                                        <i class="fa-regular fa-heart FavoritePlace"></i>
+                                        <a href="#">View Price</a>
+                                    </div>
+
+                                    <div class="show-images">
+                                        <a href="booking.html">9 images</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="Show-more-results mb-4">
+                        <a href="#">Show more results</a>
+                    </div>  
+
                 </div>
 
             </section>
 
 
-
         </section>
     </main>
+
+    <footer>
+        <div class="d-flex container py-5">
+
+            <div>
+                <div>
+                    <img src="../images/Group.png" alt="">
+                </div>
+                <div class="d-flex gap-3 pt-3">
+                    <a href="#"><i class="fa-brands fa-facebook icon-cloor"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter icon-cloor"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube icon-cloor"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram icon-cloor"></i></a>
+                </div>
+            </div>
+
+            <div class="container row d-flex justify-content-center">
+
+                <div class="col-2">
+                    <h5>Our Destinations</h5>
+                    <div class=" d-flex flex-column ">
+                        <a href="" class="oil-color text-decoration-none opacity-50">Canada</a>
+                        <a href="" class="oil-color text-decoration-none opacity-50">Alaksa</a>
+                        <a href="" class="oil-color text-decoration-none opacity-50">France</a>
+                        <a href="" class="oil-color text-decoration-none opacity-50">Iceland</a>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <h5 class="cursor">Our Activities</h5>
+                    <div class=" d-flex flex-column">
+                        <a href="" class="oil-color text-decoration-none opacity-50">Northern Lights</a>
+                        <a href="" class="oil-color text-decoration-none opacity-50">Cruising & sailing</a>
+                        <a href="" class="oil-color text-decoration-none opacity-50">Multi-activities</a>
+                        <a href="" class="oil-color text-decoration-none opacity-50">Kayaing</a>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <h5>Travel Blogs</h5>
+                    <div class=" d-flex flex-column">
+                        <a href="" class="oil-color text-decoration-none opacity-50">Bali Travel Guide</a>
+                        <a href="" class="oil-color text-decoration-none opacity-50">Sri Lanks Travel Guide</a>
+                        <a href="" class="oil-color text-decoration-none opacity-50">Peru Travel Guide</a>
+                        <a href="" class="oil-color text-decoration-none opacity-50">Bali Travel Guide</a>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <h5>About Us</h5>
+                    <div class=" d-flex flex-column">
+                        <a href="" class="oil-color text-decoration-none opacity-50">Our Story</a>
+                        <a href="" class="oil-color text-decoration-none opacity-50">Work with us</a>
+                    </div>
+                </div>
+
+                <div class="col-2 ">
+                    <h5>Contact Us</h5>
+                    <div class=" d-flex flex-column">
+                        <a href="" class="oil-color text-decoration-none opacity-50">Our Story</a>
+                        <a href="" class="oil-color text-decoration-none opacity-50">Work with us</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <div class="row footer-Subscribe d-flex align-items-center ">
+                <div class="col-6 w-50  title-footer">
+                    <h3 class="w-25">Subscribe Newsletter</h3>
+                    <h4>The Travel</h4>
+                    <p>Get inspired! Receive travel discounts, tips and behind the scenes stories.</p>
+                    <div class="w-100 d-flex  gap-3">
+                        <input class="w-100 p-2 custom-input" type="email" placeholder="Your Email Address">
+                        <button class="btn  btn-dark p-3">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-6  w-50 d-flex justify-content-end">
+                    <img class="w-75" src="../images/post.png" alt="">
+                </div>
+            </div>
+
+
+        </div>
+
+    </footer>
 
 
 
