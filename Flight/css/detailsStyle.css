@@ -1,0 +1,206 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--page-bg);
+  color: var(--oil-Green);
+}
+
+a {
+  color: var(--oil-Green);
+}
+
+.Fcontainer {
+  width: 87.2%;
+  margin: auto;
+}
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-mint {
+  background-color: var(--Mint-Green);
+}
+
+.bg-light-mint {
+  background-color: var(--light-mint);
+}
+
+.bg-soft-mint {
+  background-color: var(--soft-mint);
+}
+
+.text-orange {
+  color: var(--ment-orange);
+}
+
+.text-gray {
+  color: #79747e;
+}
+
+.border-mint {
+  border-color: var(--Mint-Green);
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-32 {
+  font-size: 32px;
+}
+
+.fs-48 {
+  font-size: 48px;
+}
+.btn-mint {
+  background-color: var(--Mint-Green);
+  color: var(--oil-Green);
+  border: none;
+}
+
+.btn-outline-mint {
+  background-color: var(--white);
+  color: var(--oil-Green);
+  border: 1px solid var(--Mint-Green);
+}
+
+.btn-dark-green {
+  background-color: var(--oil-Green);
+  color: var(--white);
+  border: none;
+}
+
+.icon-box {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+}
+
+.book-btn {
+  width: 150px;
+  height: 48px;
+}
+
+.top-nav {
+  height: 87px;
+}
+
+.nav-inner {
+  height: 100%;
+}
+
+.nav-item-link {
+  border-bottom: 4px solid transparent;
+}
+
+.nav-item-link.active {
+  border-bottom-color: var(--Mint-Green);
+}
+
+.logo img {
+  height: 40px;
+}
+
+.user-img {
+  width: 45px;
+  height: 45px;
+}
+
+.aero-img img {
+  width: 109%;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--Mint-Green);
+
+}
+
+/* Flight card*/
+
+.airline-box {
+  width: 21%;
+}
+
+.airline-logo {
+  width: 30%;
+  background-color: #d9d9d9;
+  
+}
+
+.line {
+  display: inline-block;
+  width: 3%;
+  height: 1px;
+  background-color: var(--oil-Green);
+}
+
+.plane {
+  font-size: 40px;
+}
+
+  
+/* footer */
+
+footer {
+  margin-top: 16%;
+  background-color: var(--Mint-Green);
+  color: var(--oil-Green);
+  position: relative;
+  padding: 12% 0px 2% 0px;
+}
+
+.icon-cloor {
+  color: var(--oil-Green);
+}
+
+.footer-Subscribe {
+  position: absolute;
+  top: -30%;
+  background-color: #cdeae1;
+  width: 90%;
+  margin-left: -1%;
+  border-radius: 20px;
+  padding: 0% 1%;
+}
+
+.title-footer {
+  width: 50%;
+}
+.title-footer h3 {
+  font-size: 44px;
+}
+.title-footer h4 {
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0.6;
+}
+
+.title-footer p {
+  font-weight: 500;
+  opacity: 0.4;
+}
+
+.custom-input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: var(--white);
+  padding: 12px 16px;
+   color: var(--oil-Green);
+}
+
+.custom-input:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.custom-input::placeholder {
+  color: var(--oil-Green);
+}
+.img2 {
+  width: 30%;
+}
+.width {
+  width: 55%;
+}
