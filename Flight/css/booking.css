@@ -76,3 +76,53 @@
 .custom-margin {
   margin-top: 10%;
 }
+
+.saved-card {
+  background-color: var(--Mint-Green);
+  padding: 24px 20px;
+  border-radius: 16px;
+  margin-bottom: 18px;
+}
+
+.visa{
+  background: #000;
+  color: #fff;
+  font-size: 10px;
+  padding: 5px 8px;
+}
+
+.card-number {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card-date {
+  font-size: 16px;
+}
+
+.pay-radio {
+  width: 24px;
+  height: 24px;
+  accent-color:var(--white);
+}
+
+.add-card-box {
+  height: 210px;
+  background: var(--white);
+  border: 2px dashed var(--Mint-Green);
+  border-radius: 16px;
+
+}
+
+.add-card-icon {
+  display: block;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 12px;
+  border: 2px solid var(--Mint-Green);
+  border-radius: 50%;
+  font-size:54px;
+  line-height: 53px;
+  font-weight:300;
+  color:var(--Mint-Green);
+}

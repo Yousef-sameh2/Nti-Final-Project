@@ -110,11 +110,11 @@
                 </div>
 
 
-                
+
                 <div class="bg-white rounded-5 shadow-sm p-4 mb-11">
-                    
+
                     <label class="pay rounded-4 d-flex justify-content-between align-items-center p-5 mb-4 w-100">
-                        <div >
+                        <div>
                             <h5 class="fs-md fw-semibold mb-2">Pay in full</h5>
                             <p class="text-sm mb-0">Pay the total and you are all set</p>
                         </div>
@@ -135,24 +135,27 @@
                     <a href="#" class="d-flex text-xs fw-semibold px-5 pt-4 pb-2">More info</a>
                 </div>
 
-             
-                <div class="bg-white rounded-5 shadow-sm p-7 mb-11">
+
+                <div id="guest" class="bg-white rounded-5 shadow-sm p-7 mb-11">
                     <h3 class="fs-24 fw-semibold mb-7">Login or Sign up to book</h3>
 
-                    <input type="tel" class="form-control bg-white login-input w-100 mb-5" placeholder="Phone Number">
+                    <input type="tel" id="phoneInput" class="form-control bg-white login-input w-100 mb-5" pattern="01(0|1|2|5)[0-9]{8}"
+                        placeholder="Phone Number">
 
                     <p class="text-sm mb-9">
                         We’ll call or text you to confirm your number. Standard message and data rates apply.
                         <a href="#" class="fw-semibold text-decoration-none">Privacy Policy</a>
                     </p>
 
-                    <button class="btn btn-mint w-100 py-4 mb-7 continue-btn">Continue</button>
+                    <button id="continueBtn" class="btn btn-mint w-100 py-4 mb-7 continue-btn">Continue</button>
 
-                    
+
                     <div class="d-flex align-items-center gap-5 mb-7">
-                        <hr class="flex-grow-1 custom-hr"></hr>
+                        <hr class="flex-grow-1 custom-hr">
+                        </hr>
                         <span class="text-sm">Or</span>
-                        <hr class="flex-grow-1 custom-hr"></hr>
+                        <hr class="flex-grow-1 custom-hr">
+                        </hr>
                     </div>
 
                     <div class="row g-4 mb-4">
@@ -174,7 +177,24 @@
                     </div>
 
                     <button class="btn social-btn w-100 d-flex justify-content-center align-items-center gap-3">
-                        <i class="fa-solid fa-envelope fs-5"></i><b class="fw-semibold">Continue with email</b> 
+                        <i class="fa-solid fa-envelope fs-5"></i><b class="fw-semibold">Continue with email</b>
+                    </button>
+                </div>
+
+
+                <div id="loggedIn" class="d-none bg-white rounded-5 shadow-sm p-7 mb-11">
+                    <div class="saved-card d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center gap-4">
+                            <span class="visa">VISA</span>
+                            <span class="card-number">**** 4321</span>
+                            <span class="card-date">02/27</span>
+                        </div>
+                        <input type="radio" name="card" class="pay-radio" checked>
+                    </div>
+
+                    <button type="button" class="add-card-box w-100">
+                        <span class="add-card-icon">+</span>
+                        <h5 class="text-gray">Add a new card</h5>
                     </button>
                 </div>
             </div>
