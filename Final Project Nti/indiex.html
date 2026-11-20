@@ -16,7 +16,46 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body class="bg-emphasis-secondary">
-    <nav class="my-9">
+    <nav class="navbar md:navbar-expand d-flex md:d-none bg-1 fg-2">
+      <div class="container-fluid">
+        <a class="navbar-brand w-75" href="#">            
+          <img src="image/Logo.png" alt="Globe" class="w-25" />
+        </a>
+
+        <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+          <div class="drawer-header">
+            <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+          </div>
+          <div class="drawer-body">
+            <ul class="navbar-nav me-auto mb-2 md:mb-0">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">
+                <i class="fa-solid fa-plane"></i>
+                <a href="http://" class="text-decoration-none fg-black"
+                  >Find Flight</a
+                >
+              </a></li>
+              <li class="nav-item"><a class="nav-link" href="#">
+                <i class="fa-solid fa-bed"></i>
+                <a href="http://" class="text-decoration-none fg-black">
+                  Find Stays</a
+                >
+              </a></li>
+            </ul>
+            <div class="button gap-2 mx-6">
+              <button class="btn-solid bg-transparent fs-lg">Login</button>
+              <button class="btn-solid btn-styled bg-oil-green fg-white fs-md px-6">
+                Sign up
+              </button>
+            </div>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+    <nav class="my-3 pt-3 d-none md:d-flex">
       <div class="container d-flex justify-content-between align-items-center">
         <div class="icon d-flex align-items-center gap-5 fs-lg fg-oil-green">
           <div>
@@ -32,12 +71,10 @@
             >
           </div>
         </div>
-        <div class="logo w-25">
-          <a href="http://" class="">
-            <img src="image/Logo.png" alt="Globe" class="w-50" />
-          </a>
+        <div class="logo d-flex justify-content-center">
+            <img src="image/Logo.png" alt="Globe" class="w-25" />
         </div>
-        <div class="button gap-2 d-none md:d-flex">
+        <div class="button gap-2 mx-6">
           <button class="btn-solid bg-transparent fs-lg">Login</button>
           <button class="btn-solid btn-styled bg-oil-green fg-white fs-md px-6">
             Sign up
@@ -45,14 +82,14 @@
         </div>
       </div>
     </nav>
-    <section class="section-1 position-relative mb-12">
+    <section class="section-1 position-relative">
       <div class="container">
-        <div class="w-75 md:w-25 fg-white pt-12">
+        <div class="w-50 fg-white pt-12">
           <h1>Make your travel whishlist, we’ll do the rest</h1>
           <p>Special offers to suit your plan</p>
         </div>
       </div>
-      <div class="bg-white container rounded-5 p-5 position-absolute top-100 start-50 translate-middle shadow mb-12">
+      <div class="bg-white container rounded-5 p-5 position-absolute top-100 start-50 translate-middle shadow">
         <h3>Where are you flying?</h3>
         <div class="row row-cols-1 md:row-cols-4">
           <div class="col">
@@ -108,7 +145,7 @@
         </div>
       </div>
     </section>
-    <section class="section-2">
+    <section class="section-2 pt-12 mt-12">
       <div class="container d-flex justify-content-between">
         <div>
           <h2>Let's go places together</h2>
@@ -145,8 +182,8 @@
       </div>
       <div class="row row-cols-1 md:row-cols-4">
         <div class="col position-relative">
-          <div class="">
-            <img src="image/card-1.png" alt="" />
+          <div>
+            <img src="image/card-1.png" alt=""  class="w-100"/>
           </div>
           <div class="card-text">
             <div
@@ -162,9 +199,7 @@
           </div>
         </div>
         <div class="col position-relative">
-          <div class="">
-            <img src="image/card-2.png" alt="" />
-          </div>
+            <img src="image/card-2.png" alt="" class="w-100"/>
           <div class="card-text">
             <div
               class="fg-white d-flex align-items-center justify-content-between"
@@ -179,9 +214,7 @@
           </div>
         </div>
         <div class="col position-relative">
-          <div class="">
-            <img src="image/card-3.png" alt="" />
-          </div>
+            <img src="image/card-3.png" alt="" class="w-100"/>
           <div class="card-text">
             <div
               class="fg-white d-flex align-items-center justify-content-between"
@@ -196,10 +229,8 @@
           </div>
         </div>
         <div class="col position-relative">
-          <div class="">
-            <img src="image/card-4.png" alt="" />
-          </div>
-          <div class="card-text">
+            <img src="image/card-4.png" alt="" class="w-100"/>
+          <div class="card-text ">
             <div
               class="fg-white d-flex align-items-center justify-content-between"
             >
@@ -230,32 +261,31 @@
           </button>
         </div>
       </div>
-      <div class="row row-cols-1 md:row-cols-12 gx-5">
-        <div class="col-6 bg-mint-green py-5  rounded-5">
-
+      <div class="row gx-5">
+        <div class="col-12 md:col-6 bg-mint-green py-5  rounded-5">
             <div class="d-flex justify-content-between align-items-center rawend-5">
-                <h1 class="fs-2xl">Backpacking Sri Lanka</h1>
+                <h1 class="fs-3xl">Backpacking Sri Lanka</h1>
                 <p class="bg-white rounded-5 fs-lg m-1 p-2">From<span class="fw-medium"><br>$700</span></p>
             </div>
-            <p class="fs-sm py-9">
+            <p class="fs-md my-8">
             Traveling is a unique experience as it's the best way to unplug from
             the pushes and pulls of daily life. It helps us to forget about our
             problems, frustrations, and fears at home. During our journey, we
             experience life in different ways. We explore new places, cultures,
             cuisines, traditions, and ways of living.
             </p>
-            <button class="btn-solid w-100 mt-12">Book Flight</button>
+            <button class="btn-solid w-100 mt-8">Book Flight</button>
         </div>
-        <div class="col-3">
+        <div class="col-6 md:col-3">
             <div><img src="image/Rectangle 3.png" alt="" class="w-100"></div>
             <div><img src="image/Rectangle 3 (1).png" alt="" class="w-100 pt-3"></div>
         
-      </div>
-      <div class="col-3">
+        </div>
+        <div class="col-6 md:col-3">
         <div><img src="image/Rectangle 3 (2).png" alt="" class="w-100"></div>
         <div><img src="image/Rectangle 3 (3).png" alt="" class="w-100 pt-3"></div>
 
-      </div>
+        </div>
       </div>
       
     </section>

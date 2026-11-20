@@ -15,8 +15,60 @@
         />
         <link rel="stylesheet" href="style/style.css" />
 </head>
-<body class="">
-    <nav class="my-9">
+<body>
+    <nav class="navbar md:navbar-expand d-flex md:d-none bg-1 fg-2">
+      <div class="container-fluid">
+        <a class="navbar-brand w-75" href="#">            
+          <img src="image/Logo.png" alt="Globe" class="w-25" />
+        </a>
+        <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+          <div class="drawer-header">
+            <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+          </div>
+          <div class="drawer-body">
+            <ul class="navbar-nav me-auto mb-2 md:mb-0">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">
+                <i class="fa-solid fa-plane"></i>
+                <a href="http://" class="text-decoration-none fg-black"
+                  >Find Flight</a
+                >
+              </a></li>
+              <li class="nav-item"><a class="nav-link" href="#">
+                <i class="fa-solid fa-bed"></i>
+                <a href="http://" class="text-decoration-none fg-black">
+                  Find Stays</a
+                >
+              </a></li>
+            </ul>
+            <div class="button d-flex align-items-center divide-x">
+                <div class="">
+                  <a href="http://" class="text-decoration-none fg-oil-green"><i class="fa-solid fa-heart"style="color: rgb(0, 0, 0);"></i><span class="px-2">Favourites</span></a>
+                </div>
+                <div class="px-1">
+                  <a type="button" data-bs-toggle="menu" aria-expanded="false" class="text-decoration-none fg-oil-green">
+                    <span class="avatar">
+                      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+                    </span>
+                    <span>John D.</span>
+                  </a>
+                <div class="menu">
+                    <a class="menu-item" href="#">My account</a>
+                    <a class="menu-item" href="#">My cart</a>
+                    <a class="menu-item" href="#">Security and login</a>
+                </div>
+
+                </div>
+
+            </div>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+    <nav class="my-3 p-3 d-none md:d-flex">
       <div class="container d-flex justify-content-between align-items-center">
         <div class="icon d-flex align-items-center gap-5 fs-lg fg-oil-green">
           <div>
@@ -32,16 +84,14 @@
             >
           </div>
         </div>
-        <div class="logo w-25">
-          <a href="http://" class="">
-            <img src="image/Logo.png" alt="Globe" class="w-50" />
-          </a>
+        <div class="logo d-flex justify-content-center ">
+            <img src="image/Logo.png" alt="Globe" class="w-25" />
         </div>
-        <div class="button gap-2 d-none md:d-flex d-flex divide-x">
-            <div class="p-3">
+        <div class="button d-flex align-items-center divide-x">
+            <div class="">
               <a href="http://" class="text-decoration-none fg-oil-green"><i class="fa-solid fa-heart"style="color: rgb(0, 0, 0);"></i><span class="px-2">Favourites</span></a>
             </div>
-            <div class="px-5">
+            <div class="px-1">
               <a type="button" data-bs-toggle="menu" aria-expanded="false" class="text-decoration-none fg-oil-green">
                 <span class="avatar">
                   <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
@@ -63,7 +113,7 @@
     <section>
       <div class="bg-white container rounded-5 p-5 shadow">
         <div class="row row-cols-1 md:row-cols-12">
-          <div class="col-3">
+          <div class="col-12 md:col-3">
             <fieldset class="custom-fieldset">
               <legend>From - To</legend>
               <input
@@ -73,7 +123,7 @@
               />
             </fieldset>
           </div>
-          <div class="col-2">
+          <div class="col-12 md:col-2">
             <fieldset class="custom-fieldset">
               <legend>Trip</legend>
               <select class="form-control border-0 shadow-none">
@@ -83,7 +133,7 @@
               </select>
             </fieldset>
           </div>
-          <div class="col-3">
+          <div class="col-12 md:col-3">
             <fieldset class="custom-fieldset">
               <legend>Depart- Return</legend>
               <input
@@ -95,7 +145,7 @@
               />
             </fieldset>
           </div>
-          <div class="col-3">
+          <div class="col-12 md:col-3">
             <fieldset class="custom-fieldset">
               <legend>Passenger - Class</legend>
               <input
@@ -106,7 +156,7 @@
             </fieldset>
             
           </div>
-          <div class="col-1">
+          <div class="col-12 md:col-1">
             <button type="button" class="btn-solid bg-mint-green btn-icon mt-6 p-3">
               <i class="fa-solid fa-magnifying-glass fs-lg" style="color: rgb(0, 0, 0);"></i>
             </button>
@@ -157,12 +207,12 @@
                   Rating
                   <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
                 </summary>
-                <div class="d-flex gap-5 pt-5">
-                  <span class="custom-border-color hover-lift badge p-4">0+</span>
-                  <span class="custom-border-color hover-lift badge p-4">1+</span>
-                  <span class="custom-border-color hover-lift badge p-4">2+</span>
-                  <span class="custom-border-color hover-lift badge p-4">3+</span>
-                  <span class="custom-border-color hover-lift badge p-4">4+</span>
+                <div class="d-flex row gap-5 pt-5">
+                  <span class="custom-border-color hover-lift badge p-4 col">0+</span>
+                  <span class="custom-border-color hover-lift badge p-4 col">1+</span>
+                  <span class="custom-border-color hover-lift badge p-4 col">2+</span>
+                  <span class="custom-border-color hover-lift badge p-4 col">3+</span>
+                  <span class="custom-border-color hover-lift badge p-4 col">4+</span>
 
                 </div>
           </div>
@@ -205,7 +255,7 @@
           </div>
         </aside>
         <div class="col-9">
-          <div class="row divide-x bg-white rounded-5 p-5 mt-12 ms-5 shadow">
+          <div class="row row-cols-2 md:row-cols-4 divide-x bg-white rounded-5 p-5 mt-12 ms-5 shadow">
             <div class="col">
               <div>
                 <h4>Cheapest</h4>

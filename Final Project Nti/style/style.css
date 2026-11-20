@@ -44,7 +44,6 @@ body{
     height: 70vh;
     margin-bottom: 150px;
 }
-
 .custom-fieldset {
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -62,7 +61,7 @@ body{
 .card-text{
     position: absolute;
     bottom: 20px;
-    left: 15px;
+    left: 25px;
     width: 80%;
 }
 
@@ -77,7 +76,8 @@ footer{
     top: -45%;
     background-color: #CDEAE1;
     width: 80%;
-    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 20px;
     padding: 2% 4%;
 }
@@ -115,5 +115,5 @@ footer{
 }
 
 .custom-input::placeholder {
-    color: var(--oil-Green);                     
+    color: var(--oil-green)                    
 }
